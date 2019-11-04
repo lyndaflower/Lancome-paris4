@@ -9,6 +9,8 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -36,6 +38,9 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
 
         mAuth = FirebaseAuth.getInstance();
+        Animation animation= AnimationUtils.loadAnimation(MainActivity.this,R.anim.zoomin);
+
+        b.startAnimation(animation);
         mAuthListener = new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
@@ -50,8 +55,8 @@ public class MainActivity extends AppCompatActivity {
         roxanneView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent gallery = new Intent(MainActivity.this, LogInActivity.class );
-                startActivity(gallery);
+                Intent logIn = new Intent(MainActivity.this, PhotoActivity.class );
+                startActivity(logIn);
 
             }
         });
