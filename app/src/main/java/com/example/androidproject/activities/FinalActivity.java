@@ -26,12 +26,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class FinalActivity extends AppCompatActivity {
-
-    //    @BindView(R.id.view1) TextView mView;
-//    @BindView(R.id.view2) TextView mMake;
-//    @BindView(R.id.view3) TextView mView1;
-//    @BindView(R.id.view4) TextView mMake2;
-//    @BindView(R.id.listProgress) ListView mListprogress;
+    
     @BindView(R.id.recyclerView) RecyclerView mRecycle;
     @BindView(R.id.progressBar) ProgressBar mProgressText;
     @BindView(R.id.errorView) TextView mErrorView;
@@ -48,15 +43,9 @@ public class FinalActivity extends AppCompatActivity {
 
 
         Intent choice = getIntent();
-        String name = choice.getStringExtra("name");
-        String email = choice.getStringExtra("email");
         String location = choice.getStringExtra("location");
-        String type = choice.getStringExtra("type");
-
-//        mView.setText("Name : " + name );
-//        mMake.setText("Email : " + email);
-//        mView1.setText("Location : " + location);
-//        mMake2.setText("Type : " +type);
+        getParfumes(location);
+        
 
         ParfumeInter client = PerfumeRetro.getClient();
 
@@ -105,6 +94,9 @@ public class FinalActivity extends AppCompatActivity {
                 mProgressText.setVisibility(View.GONE);
             }
         });
+    }
+
+    private void getParfumes(String location) {
     }
 
 }
