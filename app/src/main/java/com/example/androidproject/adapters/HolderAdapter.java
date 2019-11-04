@@ -13,8 +13,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.androidproject.R;
 import com.example.androidproject.activities.Detail_activity;
+import com.example.androidproject.activities.Holder;
 import com.example.androidproject.models.Business;
 import com.example.androidproject.models.Perfume;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.squareup.picasso.Picasso;
 
 import org.parceler.Parcels;
@@ -51,12 +54,9 @@ public class HolderAdapter extends RecyclerView.Adapter<HolderAdapter.PerfumeVie
     }
 
     public class PerfumeViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        @BindView(R.id.imageView)
-        ImageView mImageView;
-        @BindView(R.id.perfumNameView)
-        TextView mPerfumeView;
+        @BindView(R.id.imageView) ImageView mImageView;
+        @BindView(R.id.perfumNameView) TextView mPerfumeView;
         @BindView(R.id.anotherView) TextView mView;
-//     @BindView(R.id.ratingView) TextView mRating;
 
         private Context mContext;
 
@@ -76,6 +76,9 @@ public class HolderAdapter extends RecyclerView.Adapter<HolderAdapter.PerfumeVie
         @Override
         public void onClick(View v) {
             int itemPosition = getLayoutPosition();
+            DatabaseReference ref = FirebaseDatabase
+                    .getInstance()
+                    .getReference(Holder.FIREBASE_CHILD_PERFUMES);
             Intent intent = new Intent(mContext, Detail_activity.class);
             intent.putExtra("position", itemPosition);
             intent.putExtra("perfumes", Parcels.wrap(mSpray));
