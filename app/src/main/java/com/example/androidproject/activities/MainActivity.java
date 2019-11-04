@@ -38,9 +38,9 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
 
         mAuth = FirebaseAuth.getInstance();
-        Animation animation= AnimationUtils.loadAnimation(MainActivity.this,R.anim.zoomin);
+        Animation animation= AnimationUtils.loadAnimation(MainActivity.this,R.anim.blink_anim);
 
-        b.startAnimation(animation);
+        lyndaView.startAnimation(animation);
         mAuthListener = new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
