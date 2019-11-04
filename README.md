@@ -1,19 +1,16 @@
-# LANCOME PARFUME 
+# LANCOME PARFUME
 ## Author
 *UMURERWA Lynda Flower*
 
 
-<img src= "/images/signUp.png">
-<img src = "/images/enter.png">
+<img src = "/images/Screenshot_2019-11-04-16-44-17.png">
+<img src="/images/Screenshot_2019-11-04-16-44-23.png>
+/home/wecode/Android-project/images/Screenshot_2019-11-04-17-15-55.png
 <img src = "/images/gallery.png">
-<img src = "/images/search.png">
+<img src = "/images/Screenshot_2019-11-04-16-45-10.png">
 <img src = "/images/shops.png">
 <img src = "/images/perfume.png">
-<img src = "/images/logout.png">
-<img src="/images/logIn.png">
-
-
-
+<img src = "/images/Screenshot_2019-11-04-16-44-48.png>
 
 # DESCRIPTION
 
@@ -30,7 +27,7 @@ This plattform where user first sign up if he/she has not acount and after user 
 
 A couple of things to get you started:
 
-1.Ensure you have android studio 
+1.Ensure you have android studio
 2.Ensure you have firebase
 
 # SETUP/INSTALLATION
@@ -41,14 +38,14 @@ FIREBASE
 # TECHNOLOGIES USED:
 
 * Butterknife
-*Fragment 
+*Fragment
 *Parcel
 * Layout(Relative layout and linear layout )
 
 # Support & Contact
-  
+
 *  Email Address: umurerwalynda@gmail.com.
-  
+
 * github-username: lyndaflower.
 
 
