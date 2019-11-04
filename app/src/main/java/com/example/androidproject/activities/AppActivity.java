@@ -52,4 +52,8 @@ public class AppActivity extends AppCompatActivity {
         });
 
     }
+
+    private void saveToFirebase(String location) {
+        mSearchedLocationReference.setValue(location);
+    }
 }
