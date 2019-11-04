@@ -20,6 +20,15 @@
         android:layout_centerInParent="true"
         android:orientation="vertical"
         android:padding="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOG IN to lancome paris "
+            android:textColor="@color/colorTextIcons"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_above="@+id/linearLayout"
+            android:layout_centerHorizontal="true" />
 
         <EditText
             android:id="@+id/email"
