@@ -11,6 +11,7 @@ import android.widget.ImageButton;
 
 import com.example.androidproject.R;
 import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -30,19 +31,25 @@ public class AppActivity extends AppCompatActivity {
 
         ButterKnife.bind(this);
 
+        mSearchedLocationReference = FirebaseDatabase
+                .getInstance()
+                .getReference()
+                .child(Holder.FIREBASE_CHILD_SEARCHED_LOCATION);
+
+
         mMakeChoice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String location = mText3.getText().toString();
+                if (v == mMakeChoice) {
+                    String location = mText3.getText().toString();
+                    saveToFirebase(location);
 
-                Intent choice = new Intent(AppActivity.this, FinalActivity.class);
-                choice.putExtra("location", location);
-                startActivity(choice);
+                    Intent choice = new Intent(AppActivity.this, FinalActivity.class);
+                    choice.putExtra("location", location);
+                    startActivity(choice);
+                }
             }
         });
 
-    }
-    private void addToSharedPreferences(String location){
-        mEditor.putString(Holder.PREFERENCES_LOCATION_KEY, location).apply();
     }
 }
