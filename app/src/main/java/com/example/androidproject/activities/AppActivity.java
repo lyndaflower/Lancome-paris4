@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 
 import com.example.androidproject.R;
+import com.google.firebase.database.DatabaseReference;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -17,6 +18,7 @@ import butterknife.ButterKnife;
 public class AppActivity extends AppCompatActivity {
     private SharedPreferences mSharedPreferences;
     private SharedPreferences.Editor mEditor;
+    private DatabaseReference mSearchedLocationReference;
 
     @BindView(R.id.makeChoice) ImageButton mMakeChoice;
     @BindView(R.id.text3) EditText mText3;
