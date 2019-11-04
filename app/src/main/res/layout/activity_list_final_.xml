@@ -10,7 +10,7 @@
         android:layout_width="130dp"
         android:layout_height="100dp"
         android:id="@+id/imageView"
-        android:layout_marginTop="6dp"
+        android:layout_marginTop="2dp"
         android:layout_marginLeft="10dp"
         android:src="@drawable/image3"
         android:scaleType="centerCrop"/>

@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/parfunebg"
     tools:context=".activities.SignUpActivity">
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:id="@+id/imageView"
-        android:src="@drawable/choice"
-        android:scaleType="centerCrop" />
+<!--    <ImageView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:id="@+id/imageView"-->
+<!--        android:src="@drawable/choice"-->
+<!--        android:scaleType="centerCrop" />-->
 
     <LinearLayout
         android:orientation="vertical"
@@ -24,12 +25,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="CREATE ACCOUNT "
-            android:textColor="@color/colorTextIcons"
-            android:textSize="30dp"
-            android:textStyle="bold"
             android:layout_above="@+id/linearLayout"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/abel"
+            android:text="CREATE ACCOUNT "
+            android:textColor="@color/colorAccent"
+            android:textSize="30dp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/nameText"
@@ -80,12 +82,12 @@
             android:hint="Confirm Password"
             android:inputType="textPassword"
             android:nextFocusDown="@+id/passwordEditText"
+            android:fontFamily="@font/abel"
             android:padding="10dp"
             android:layout_marginBottom="10dp"
             android:textColor="@android:color/black"
             android:textColorHint="@color/colorDivider"
             android:textSize="20sp" />
-
 
         <Button
             android:id="@+id/createUser"
@@ -93,6 +95,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:background="@color/colorAccent"
+            android:fontFamily="@font/abel"
             android:padding="10dp"
             android:text="Sign up"
             android:layout_marginLeft="60dp"
@@ -102,9 +105,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:textColor="@color/colorAccent"
+            android:textColor="@color/colorTextIcons"
             android:textStyle="bold"
             android:textSize="25sp"
+            android:fontFamily="@font/abel"
             android:text="Already have an account? Log in here!"
             android:id="@+id/login"
             android:layout_gravity="center_horizontal" />
