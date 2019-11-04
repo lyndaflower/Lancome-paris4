@@ -4,8 +4,8 @@
 
 
 <img src = "/images/Screenshot_2019-11-04-16-44-17.png">
-<img src="/images/Screenshot_2019-11-04-16-44-23.png>
-/home/wecode/Android-project/images/Screenshot_2019-11-04-17-15-55.png
+<img src="/images/Screenshot_2019-11-04-16-44-23.png">
+<img  src="images/Screenshot_2019-11-04-17-15-55.png">
 <img src = "/images/gallery.png">
 <img src = "/images/Screenshot_2019-11-04-16-45-10.png">
 <img src = "/images/shops.png">
