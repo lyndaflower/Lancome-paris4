@@ -62,7 +62,6 @@ public class LogInActivity extends AppCompatActivity implements View.OnClickList
         };
     }
 
-
     @Override
     public void onClick(View v) {
         if (v == registerEdit) {
